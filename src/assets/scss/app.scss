@@ -424,6 +424,8 @@
     font-size: 1.28rem;
     line-height: 1.5rem;
     &:hover{
+        left:0.5rem;
+        top:0.5rem;
         box-shadow: none;
         color: $c-primary;
     }
@@ -441,10 +443,11 @@
         border-radius: 0px;
         border: 1px solid #D6D6D6;
     }
+    &:hover::before {
+        display: none;
+    }
 }
-.btn-outline-dark:hover::before {
-    display: none;
-}
+
 .black-btn {
     box-shadow:none;
     width: 31%;
