@@ -10,7 +10,7 @@
 
 // дальше можно писать все стили сайта в этот файл, или писать их в компонентах
 .nav {
-    width: 29%;
+    //width: 29%;
     &__list {
         display: flex;
         padding: 4.3rem 0;
@@ -59,6 +59,7 @@
     margin:  0 auto;
     text-align: center;
 }
+
 .container2 {
     width: 100%;
     max-width: 730px;
@@ -66,74 +67,11 @@
     padding: 7.1rem 0;
     text-align: center;
 }
-.header {
-    width: 100%;
-    background:url(./../imgs/fon.jpg);
-    background-repeat:no-repeat;
-    background-position: center top;
-    
-    &__top {
-    line-height: 1.5;
-    display: flex;
-    align-items: center;
-    }
-    &__logotip {
-        padding: 0 4rem 0 8rem;
-        margin-right: 1rem;
-    }
-    &__poisk {
-        display: flex;
-    }
-    &__lupa {
-    padding-right: 1.6rem;
-    }
-    &__text {
-        font-size: 1rem;
-    }
-    &__text2 {
-        width: 50%;
-        font-size: 1rem;
-    }
-    &__text21 {
-        display: none;
-    }
-    &__1img {
-        padding-left: 1rem;
-    }
-    &__zag {
-        padding-bottom: 3.5rem;
-        padding-top: 27rem;
-        font-family: $add-font;
-        font-size: 2.57rem;
-        line-height: 3.5rem;
-    }
-    &__firms {
-        width: 100%;
-        margin: 5.71rem 0;
-        border-top: 1px solid #FFFFFF;
-    }
 
-}
+@import "components/header";
 
-.firm {
-    width: 11.42rem;
-    height: 4.28rem;
-    &__img {
-        margin-top: 1.65rem;
-    }
-}
-.second__col {
-    margin-top: 0.5rem;
-}
-.second__col:not(:last-child) {
-    border-right: 1px solid #FFFFFF;
-}
-.mixin {
-    display: flex;
-    justify-content: center;
-}
+
 .section {
-
     &__zag1 {
         font-family: $body-font;
         font-size: 21px;
@@ -145,15 +83,9 @@
         font-family: $add-font;
         font-size: 2.14rem;
         line-height: 2.9rem;
-        color: #333333; 
+        color: #333333;
     }
-    &__produkt {
-        padding: 0 0 6rem 0;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+    &__produkt,
     &__produkt3, 
     &__produkt2 {
         padding-bottom: 10rem;
@@ -167,58 +99,31 @@
         -webkit-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
     }
+    &__produkt {
+        padding-bottom: 4rem;
+    }
     &__produkt3 {
         justify-content: space-around;
         }
-    &__box1 {
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
         margin-bottom: 1.5rem;
         width: 350px;
         height: 280px;
-        background: linear-gradient(180deg, rgba(180, 180, 180, 0) 20.31%, #333333 100%), url(./../imgs/box1.jpg);
+        background: linear-gradient(180deg, rgba(180, 180, 180, 0) 20.31%, #333333 100%);
         transition: transform ease 0.4s;
         &:hover {
-            -o-transform: translateX(20px);
-            -ms-transform: translateX(20px);
-            -moz-transform: translateX(20px);
-            -webkit-transform: translateX(20px);
-            transform: translateX(-20px);
+            transform: translateY(-10px);
         }
-    }
-    &__box2 {
-        margin-bottom: 1.5rem;
-        width: 350px;
-        height: 280px;
-        background: linear-gradient(180deg, rgba(180, 180, 180, 0) 20.31%, #333333 100%), url(./../imgs/box2.jpg);
-    }
-    &__box3 {
-        margin-bottom: 1.5rem;
-        width: 350px;
-        height: 280px;
-        background: linear-gradient(180deg, rgba(180, 180, 180, 0) 20.31%, #333333 100%), url(./../imgs/box3.jpg);
-    }
-    &__box4 {
-        margin-bottom: 1.5rem;
-        width: 350px;
-        height: 280px;
-        background: linear-gradient(180deg, rgba(180, 180, 180, 0) 20.31%, #333333 100%), url(./../imgs/box4.jpg);
-    }
-    &__box5 {
-        margin-bottom: 1.5rem;
-        width: 350px;
-        height: 280px;
-        background: linear-gradient(180deg, rgba(180, 180, 180, 0) 20.31%, #333333 100%), url(./../imgs/box5.jpg);
-    }
-    &__box6 {
-        margin-bottom: 1.5rem;
-        width: 350px;
-        height: 280px;
-        background: linear-gradient(180deg, rgba(180, 180, 180, 0) 20.31%, #333333 100%), url(./../imgs/box6.jpg);
     }
     &__text {
         font-family: $body-font;
         font-size: 1.7rem;
         line-height: 2rem;
-        padding-top: 60%;
+        padding-bottom: 2rem;
     }
     &__black {
         margin-bottom: 8.57rem;
@@ -246,32 +151,26 @@
         font-size: 1.28rem;
         line-height: 140%;
     }
-    &__boxs1 {
-        margin-top: 2rem;
-        padding-top: 2rem;
+    &__boxs {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
         width: 350px;
-        height: 370px;
-        background: linear-gradient(180deg, rgba(180, 180, 180, 0) 0%, #333333 100%), url(./../imgs/boxs1.jpg);
-    }
-    &__boxs2 {
-        margin-top: 2rem;
-        padding-top: 2rem;
-        width: 350px;
-        height: 370px;
-        background: linear-gradient(180deg, rgba(180, 180, 180, 0) 0%, #333333 100%), url(./../imgs/boxs2.jpg);
-    }
-    &__boxs3 {
-        margin-top: 2rem;
-        padding-top: 2rem;
-        width: 350px;
-        height: 370px;
-        background: linear-gradient(180deg, rgba(180, 180, 180, 0) 0%, #333333 100%), url(./../imgs/boxs3.jpg);
+        height: 330px;
+        background: linear-gradient(180deg, rgba(180, 180, 180, 0) 0%, #333333 100%);
+        transition: transform ease 0.4s;
+        &:hover {
+            transform: translateY(-10px);
+        }
     }
     &__text2 {
         font-family: $body-font;
         font-size: 1.5rem;
         line-height: 140%;
-        padding: 60% 15% 10% 15%;
+        padding: 0 15% 10%;
+        
     }
     &__seti {
         padding-bottom: 10.7rem;
@@ -338,6 +237,11 @@
         color: #FFFFFF;
         }
     }
+
+.section--first {
+    padding-top: 3rem;
+}
+
 .footer {
     color: #333333;
     font-family: $headers-font;
@@ -412,7 +316,7 @@
 }
 .btn-outline-dark {
     position:relative;
-    width: 15.5%;
+    width: 10rem;
     height: 3.92rem;
     background: #F9F9F9;
     border-radius: 0px;
@@ -464,28 +368,26 @@
     width: 23%;
     height: 3.64rem;
 }
-@media screen and (max-width: 1024px) {
-    .header { 
-        &__text2 {
-            display: none;
-        }
-        &__text21 {
-            display: inline;
-            width: 50%;
-            font-size: 1rem;
-        }
-    }
+@media screen and (max-width: 1090px) {
     .section {
+        &__produkt,
         &__produkt2 {
             justify-content: space-around;
         }
     }
+    .header__img,
+    .header-top__favourite {
+        display: none;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .search__field,
     .nav {
         display: none;
     }  
     .dropdown {
         display: inline;
-        width: 70%;
+        width: 30%;
         padding: 2.3rem 0;
         margin-bottom: 0.5rem;
     }
@@ -493,10 +395,7 @@
         display: none;
     }
     .mixin {
-        overflow: auto;
-    }
-    .section__produkt {
-        overflow: auto;
+        overflow:scroll;
     }
     .footer__silka,
     .footer__oplata,
@@ -510,20 +409,19 @@
         flex-wrap: wrap;
     }
 }
-@media screen and (max-width: 768px) {
-    .section__img, 
-    .header__text21,
-    .header__img,
-    .header__1img,
-    .header__lupa  {
+@media screen and (max-width: 900px) {
+    .search {
         display: none;
     }
-    
-    .section__numandpoisk {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .enter {
+        margin-left: 5rem;
     }
+}
+@media screen and (max-width: 768px) {
+    .section__img {
+        display: none;
+    } 
+    .section__numandpoisk, 
     .section__seti {
         display: flex;
         flex-direction: column;
@@ -551,6 +449,13 @@
     .black-btn2 {
         width: 10rem;
     }
+    .footer__bottomtext:last-child,
+    .enter {
+        display: none;
+    }
+    .section__black-text3 {
+        padding-bottom: 3rem;
+    }
 }
 @media screen and (max-width: 500px) {
     .header__logotip {
@@ -576,6 +481,9 @@
     }
     .section__video {
         width: 100%;
+    }
+    .header__zag {
+        font-size: 1.5rem;
     }
 }
 @media screen and (max-width: 400px) {
