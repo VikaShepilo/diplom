@@ -8,7 +8,7 @@
   left: 0;
   right: 0;
   z-index: 1;
-
+  margin: 4.3rem 0;
   &__inner {
     line-height: 1.5;
     display: flex;
@@ -88,8 +88,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  min-height: 100vh;
+  background-size: cover;
   &__m {
-    padding-top: 27rem;
+    
   }
   &__zag {
     margin-bottom: 2rem;
@@ -118,6 +120,7 @@
 }
 
 .second__col {
+  margin: 1rem 0;
   max-width: 20%;
   flex: 1 0 20%;
 }
@@ -125,7 +128,6 @@
 .firm {
   padding: 1rem 0;
   text-align: center;
-
   &__img {
     max-width: 100%;
   }
