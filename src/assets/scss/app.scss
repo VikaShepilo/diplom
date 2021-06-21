@@ -417,8 +417,7 @@
     .dropdown {
         display: inline;
         width: 30%;
-        padding: 2.3rem 0;
-        margin-bottom: 0.5rem;
+
     }
     .header__text {
         display: none;
@@ -466,6 +465,9 @@
         margin-bottom: 0;
         justify-content: end;
     }
+    .section__num {
+        width: 50%;
+    }
 }
 @media screen and (max-width: 600px) {
     .section__img ,
@@ -491,7 +493,9 @@
     .section__black-text3 {
         padding-bottom: 3rem;
     }
-    
+    .section__num {
+        width: 90%;
+    }
 }
 @media screen and (max-width: 500px) {
     .header__logotip {
@@ -527,6 +531,9 @@
     .footer__seti,
     .footer__kontakt {
         margin: 3rem 1rem 2rem 1rem;
+    }
+    .section__poisk {
+        width: 300px;
     }
 }
 @media screen and (max-width: 400px) {
